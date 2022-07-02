@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, Permis
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from custom_user.mixins import TimestampMixin
+from .mixins import TimestampMixin
 
 
 class UserManager(BaseUserManager):
