@@ -4,7 +4,9 @@ This is a custom user model that uses email to authenticate.
 # Installation
 1. Clone this github repo.
 
-2. Add `authentication` to `INSTALLED_APPS` in `settings.py`
+2. Move the authentication folder to your project.
+
+3. Add `authentication` to `INSTALLED_APPS` in `settings.py`
 
 ```
 INSTALLED_APPS = [
@@ -13,18 +15,18 @@ INSTALLED_APPS = [
 ]
 ```
 
-3. Change the `AUTH_USER_MODEL` in `settings.py`
+4. Change the `AUTH_USER_MODEL` in `settings.py`
 
 ```
 AUTH_USER_MODEL = 'authentication.User'
 ```
 
-4. Make migrations
+5. Make migrations
 ```
 python manage.py makemigrations
 ```
 
-5. Migrate
+6. Migrate
 ```
 python manage.py migrate
 ```
